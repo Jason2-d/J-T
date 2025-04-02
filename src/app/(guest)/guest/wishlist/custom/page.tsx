@@ -59,7 +59,7 @@ const WishlistPage = () => {
     <div className="container mx-auto p-6">
       <div className="mb-6 flex items-center justify-between">
         <Link
-          href={'/guest/wishlist'}
+          href={'/guest/wishlist/1'}
           className="mb-3 flex cursor-pointer items-center text-black"
         >
           <ArrowLeft size={20} />
@@ -67,7 +67,7 @@ const WishlistPage = () => {
             Your Category
           </span>
         </Link>
-        <Button variant="outline">Create New List</Button>
+        <Button variant="outline" className='hidden'>Create New List</Button>
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

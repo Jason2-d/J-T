@@ -44,9 +44,9 @@ const ImageGallery = ({ images = [] }) => {
   return (
     <div className="w-full flex-[60%]">
       <Gallery>
-        <div className="flex gap-6">
+        <div className="flex gap-6 md:gap-3">
           {/* Main Image */}
-          <div className="relative h-[300px] flex-[40%]">
+          <div className="relative lg:h-[300px] md:h-[250px] flex-[40%]">
             <Item
               original={galleryImages[0].src}
               thumbnail={galleryImages[0].src}
@@ -73,7 +73,7 @@ const ImageGallery = ({ images = [] }) => {
           </div>
 
           {/* Grid Images */}
-          <div className="grid flex-[30%] grid-cols-2 gap-6">
+          <div className="grid flex-[30%] grid-cols-2 gap-6 md:gap-1 md:flex-[32%]">
             {galleryImages.slice(1).map((image, index) => (
               <Item
                 key={index}
@@ -85,7 +85,7 @@ const ImageGallery = ({ images = [] }) => {
               >
                 {({ ref, open }) => (
                   <div
-                    className="relative h-[142px] cursor-pointer overflow-hidden rounded-2xl"
+                    className="relative lg:h-[148px] md:h-[122px] cursor-pointer overflow-hidden rounded-2xl"
                     onClick={open}
                     ref={ref}
                   >

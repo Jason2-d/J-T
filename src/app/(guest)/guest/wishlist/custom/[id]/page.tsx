@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
-import PropertyCard from '@/components/cards/propertyCard';
+import PropertyCard from '@/components/guest-components/cards/propertyCard';
 import { properties } from '@/data/properties';
 import { ArrowLeft, Share2Icon } from 'lucide-react';
-import WishListShare from '@/components/dialog/wishlistshare/wishListShare';
-import WishListOptions from '@/components/dialog/wishlistoption/wishListOptions';
+import WishListShare from '@/components/guest-components/dialog/wishlistshare/wishListShare';
+import WishListOptions from '@/components/guest-components/dialog/wishlistoption/wishListOptions';
 
 const page = () => {
   return (

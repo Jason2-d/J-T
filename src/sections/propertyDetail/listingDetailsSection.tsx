@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -54,7 +56,7 @@ const ListingDetailsSection = ({
   amenities = defaultAmenities,
 }: Partial<ListingDetailsProps>) => {
   return (
-    <div className="container max-w-3xl space-y-6 p-4">
+    <div className="container max-w-3xl space-y-6 lg:p-4">
       {/* Listing Details */}
       <section aria-labelledby="listing-details-heading">
         <h2
@@ -63,11 +65,11 @@ const ListingDetailsSection = ({
         >
           Listing Details
         </h2>
-        <div className="mt-2 grid grid-cols-2 gap-y-4 text-sm text-gray-700">
+        <div className="mt-5 lg:mt-2 grid grid-cols-2 gap-y-4 text-sm text-black ">
           {details.map((detail, index) => (
             <React.Fragment key={index}>
               <span>{detail.label}</span>
-              <span className="font-medium">{detail.value}</span>
+              <span className="font-medium text-right lg:text-left">{detail.value}</span>
             </React.Fragment>
           ))}
         </div>

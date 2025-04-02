@@ -95,6 +95,7 @@ const Page = () => {
               <RevenueChart data={revenueChartData} />
             </div>
             <div>
+              {/* donut chart */}
               <DonutChart />
             </div>
           </div>
